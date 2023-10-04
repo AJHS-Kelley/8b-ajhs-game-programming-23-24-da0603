@@ -1,4 +1,4 @@
-# Collections Examples, Damian Arnold, v0.1b
+# Collections Examples, Damian Arnold, v0.1d
 
 # List -- ORDERED, CHANGEABLE, ALLOWS DUPLICATE VALUES
 breackfastFoods = ["Bacon", "Waffles", "Pancakes", "Cereal", "Milk"]
@@ -24,3 +24,7 @@ classGPA = [3.14, 2.5, 1.74, 1.99, 0.99, 4.25]
 #print(testScores[-1])
 #print(classGPA[-1])
 
+# Pause - WYOC -- Access third element in each list.
+print(breackfastFoods[2])
+print(testScores[2])
+print(classGPA[2])
