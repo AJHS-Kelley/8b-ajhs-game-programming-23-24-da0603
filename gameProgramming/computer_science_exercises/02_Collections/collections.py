@@ -1,4 +1,4 @@
-# Collections Examoles, Damian Arnold, v0.1b
+# Collections Examples, Damian Arnold, v0.1b
 
 # List -- ORDERED, CHANGEABLE, ALLOWS DUPLICATE VALUES
 breackfastFoods = ["Bacon", "Waffles", "Pancakes", "Cereal", "Milk"]
@@ -10,6 +10,17 @@ testScores = [95, 100, 25, 15, 27, 35]
 classGPA = [3.14, 2.5, 1.74, 1.99, 0.99, 4.25]
 
 # Printing Contents of a List
-print(breackfastFoods)
-print(testScores)
-print(classGPA)
+#print(breackfastFoods)
+#print(testScores)
+#print(classGPA)
+
+# Accessing Specific List Elements
+#print(breackfastFoods[0])
+#print(testScores[0])
+#print(classGPA[0])
+
+# Accessing Last Elements in List
+#print(breackfastFoods[-1])
+#print(testScores[-1])
+#print(classGPA[-1])
+
