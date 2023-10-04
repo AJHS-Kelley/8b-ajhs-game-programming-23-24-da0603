@@ -25,6 +25,11 @@ classGPA = [3.14, 2.5, 1.74, 1.99, 0.99, 4.25]
 #print(classGPA[-1])
 
 # Pause - WYOC -- Access third element in each list.
-print(breackfastFoods[2])
-print(testScores[2])
-print(classGPA[2])
+#print(breackfastFoods[2])
+#rint(testScores[2])
+#print(classGPA[2])
+
+# Changing items in list
+breackfastFoods[0] = "Sausage"
+testScores[0] = 97
+classGPA[0] = 3.57
