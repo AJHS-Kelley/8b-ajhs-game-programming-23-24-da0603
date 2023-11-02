@@ -70,7 +70,14 @@ def getGuess(alreadyGuessed):
                 print('Letter has been guessed already, try again.')
             elif guess not in 'abcdefghijklmnopqrstuvwxyz':
                 print('Please guess a Letter from the English alphabet')
-                return guess
+            else:
+                 return guess
+
+def playAgain()
+    print('Do you want to play again? Yes or no?')
+    return input().lower().startswitch('y')
+
+            
 
 #i = 0
 #while 1 < 50:
