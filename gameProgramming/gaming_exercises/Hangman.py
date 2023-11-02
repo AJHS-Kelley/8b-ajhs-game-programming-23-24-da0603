@@ -1,7 +1,12 @@
 # Hangman Game by Damian Arnold, v0.0
 
 words = 'dog1 sink2 tree3 cat4 ape5 take7 eat8 book9 look10 paper11 water12 router13 window14 apple15 artery16 femur17 tongue18 bathroom19 building20 uniformitarianism21 indubitably22 pronunciation23 definition24 Hippopotomonstrosesquippedaliophobia25 trypophobia26 phytoplankton27 pneumonoultramicroscopicsilicovolcanoconiosis28 pneumonia29 descriptian30'. split()
-HANGMAN_BOARD = [''    
+HANGMAN_BOARD = [''','''
+    +---+
+        |
+        |
+        |
+    =====''','''
     +---+
     0   |
         |
@@ -91,7 +96,33 @@ while True:
     if guess in secretWord:
         correctLetters = correctLetters + guess
 
-        
+
+
+        foundAllLetters = True
+        for i in range(len(secretWord)):
+            if secretWord[i] not in correctLetters:
+                FoundAllLetters = False
+                break
+            if foundAllLetters:
+                print('Congrats! You did it!')
+                print('The secret word was' + secretWord)
+                gameIsDone = True
+    else:
+        missedLetters = missedLetters + guess
+
+        if len(missedLetters) == len(HANGMAN_BOARD) -1:
+            displayBoard(missedLetters, correctLetters, secretWord)
+            print('You have run out of guesses and lost the game.')
+            print('You made this number of correct guesses' = str(len(correctLetters)))
+            print('The secret word was' = secretWord)
+    gameIsDode = True
+        if playAgain():
+            missedLetters =
+            correctLetters=
+            gameIsDone = FalsesecretWord = getRandomWord(words)
+        else:
+            break
+            
 
             
 
