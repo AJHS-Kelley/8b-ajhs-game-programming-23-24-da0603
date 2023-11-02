@@ -77,6 +77,22 @@ def playAgain()
     print('Do you want to play again? Yes or no?')
     return input().lower().startswitch('y')
 
+
+print('Play Hangman')
+missedLetters =''
+correctLetters = ''
+secretWord = getRandomWord(words)
+gameIsDone = False
+
+while True:
+    displayBoard(missedLetters, correctLetters, secretWord)
+
+    guess = getGuess(missedLetters + correctLetters)
+    if guess in secretWord:
+        correctLetters = correctLetters + guess
+
+        
+
             
 
 #i = 0
