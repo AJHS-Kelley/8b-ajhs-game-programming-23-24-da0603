@@ -1,11 +1,12 @@
 # Example Game Functions Project Damian Arnold v.0.0
 import random
 
-def jump():
+def openDoor():
     pass
 
 def shootPistol(pistolAmmo):
-    pass
+    if shootPistol = True:
+        pistolAmmo -= 1
 
 def reloadPistol(pistolAmmo = "0"):
     pass
