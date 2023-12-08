@@ -5,6 +5,9 @@ def revive(teamateHealth):
     if revive == True:
         teamateHealth += 100
         print("Teamate Revived!")
+    elif teamateHealth > 0:
+        revive == False
+        print("Teamate Is Not Dead!")
         
 def shootPistol(pistolAmmo):
     if shootPistol == True:   
