@@ -1,18 +1,31 @@
 # Example Game Functions Project Damian Arnold v.0.0
 import random
 
-def openDoor():
-    pass
-
+def revive(teamateHealth):
+    if revive == True:
+        teamateHealth += 100
+        print("Teamate revived!")
+        
 def shootPistol(pistolAmmo):
-    if shootPistol = True:
+    if shootPistol == True:   
         pistolAmmo -= 1
 
 def reloadPistol(pistolAmmo = "0"):
-    pass
+    if pistolAmmo == 0:
+        pistolAmmo += 20
+        print("+20 Ammo!")
+    else:
+        reloadPistol = False
 
-def functionFour(param1,param2,param3):
-    pass
+def throwGrenade(grenades):
+    if throwGrenade == True:
+        grenades -= 1
+    elif grenades == 0:
+        throwGrenade == False
+        print("No more grenades!")
+    
+
+
 
 # def catchBall(throwQuality, passCatchScore, weather0):
 #     if throwQuality > 5.0 and passCatchScore >= 99 and weather == 'Sunny':
