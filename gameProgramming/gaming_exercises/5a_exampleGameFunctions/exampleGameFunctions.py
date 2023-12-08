@@ -4,25 +4,28 @@ import random
 def revive(teamateHealth):
     if revive == True:
         teamateHealth += 100
-        print("Teamate revived!")
+        print("Teamate Revived!")
         
 def shootPistol(pistolAmmo):
     if shootPistol == True:   
         pistolAmmo -= 1
+    elif pistolAmmo == 0:
+        shootPistol == False
+        print("No Ammo!")
 
 def reloadPistol(pistolAmmo = "0"):
-    if pistolAmmo == 0:
+    if reloadPistol == True:
         pistolAmmo += 20
         print("+20 Ammo!")
     else:
         reloadPistol = False
 
 def throwGrenade(grenades):
-    if throwGrenade == True:
+    if throwGrenade == True: 
         grenades -= 1
     elif grenades == 0:
         throwGrenade == False
-        print("No more grenades!")
+        print("No More Grenades!")
     
 
 
