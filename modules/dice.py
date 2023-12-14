@@ -10,7 +10,6 @@ def roll(numDice, sizeDice):
         numRolled += 1
     return sum
 
-
 def display(numDice, sizeDice):
     numRolled = 0
     sum = 0
@@ -29,3 +28,9 @@ def isDoubles(roll1, roll2):
         isDoubles = False
     return isDoubles
 
+def isExploding(roll, sizeDice):
+    if roll == sizeDice:
+        isExploding = True
+    else:
+        isExploding = False
+    return isExploding
