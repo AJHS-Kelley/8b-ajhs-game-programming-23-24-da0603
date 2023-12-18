@@ -13,7 +13,7 @@ words = {'Colors': 'red blue teal gold green white gray brown indigo pink silver
 
 
 
-HANGMAN_BOARD = [''
+HANGMAN_BOARD = ['''
     +---+
         |
         |
@@ -23,43 +23,44 @@ HANGMAN_BOARD = [''
     0   |
         |
         |
-       =======''','''
+       =======''', '''
     +---+
     0   |
     |   |
         |
-       ======''','''
+       =======''', '''
     +---+
      0  |
     /|  |
         |
-       ======''','''
+       =======''', '''
     +---+
      0  |
     /|\ |
         |
-       ======''','''
+       =======''', '''
     +---+
      0   |
     /|\  |
     /    |
-       ======''','''
+       =======''', '''
     +---+
      0  |
     /|\ |
     / \ |
-       ======''','''
+       =======''', '''
     +---+
      0  |
     o-o |
     / \ |
-       =====''','''
+       =======''', '''
     +---+
      0  |
     o-o |
     / \ |
    o   o|
-      =====''',''']
+      =======''', '']
+
 
 # def getRandomWord(wordlist): 
 #     wordIndex = random.randint(0, len(wordList) - 1)
@@ -85,10 +86,10 @@ def displayBoard(missedLetters, correctLetters, secretWord):
 
     for i in range (len(secretWord)):
         if secretWord[i] in correctLetters:
-            blanks = blanks[;i] + secretWord[i]+ blanks[i+1:]
+            blanks = blanks[:i] + secretWord[i]+ blanks[i+1:]
 
     for letter in blanks:
-        print(letter, and = '')
+        print(letter, end = '')
     print()
 
 
@@ -159,8 +160,8 @@ while True:
         if len(missedLetters) == len(HANGMAN_BOARD) -1:
             displayBoard(missedLetters, correctLetters, secretWord)
             print('You have run out of guesses and lost the game.')
-            print('You made this number of correct letters' = str(len(correctLetters)))
-            print('The secret word was' = secretWord)
+            print('You made this number of correct letters' + str(len(correctLetters)))
+            print('The secret word was' + secretWord)
             gameIsDode = True
     if gameIsDone:
         if playAgain():
